@@ -1,284 +1,355 @@
 <!DOCTYPE html>
+<!-- Definición del tipo de documento HTML -->
 
 <html lang="en">
+<!-- Apertura del elemento HTML. El atributo "lang" define el idioma del contenido. -->
 
 <head>
+    <!-- Encabezado del documento, donde se colocan los metadatos y enlaces a recursos externos. -->
 
     <meta charset="UTF-8">
+    <!-- Definición del conjunto de caracteres utilizados en el documento. UTF-8 es un estándar universal. -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Metaetiqueta para configurar la escala del diseño para dispositivos móviles. Garantiza que la página sea responsiva. -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Enlace al archivo CSS de Bootstrap desde un CDN. Bootstrap es un framework CSS para diseño responsivo. -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Enlace a la hoja de estilos de Font Awesome desde un CDN. Proporciona iconos escalables. -->
 
     <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a una hoja de estilos personalizada local, llamada "style.css", que probablemente contiene estilos específicos para esta página. -->
 
     <title>Practica_frontend</title>
+    <!-- Título de la página web que aparecerá en la pestaña del navegador. -->
 
 </head>
+<!-- Cierre del encabezado del documento -->
 
-<!-- Sesion de Menu (Navbar) -->
+<!-- Sesión de Menú (Navbar) -->
 
 <body>
+    <!-- Inicio del cuerpo del documento, donde se coloca el contenido visible de la página. -->
+
     <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Inicio de la barra de navegación (navbar) utilizando clases de Bootstrap para estilizarla como "oscura" y responsiva para dispositivos grandes. -->
 
         <div class="container">
+            <!-- Contenedor que centraliza el contenido de la barra de navegación. -->
 
             <a class="navbar-brand" href="#">
-
+                <!-- Enlace que representa la marca de la página, redirige a la página de inicio (enlace vacío "#"). -->
                 <i class="fa-solid fa-globe"></i>
-
+                <!-- Icono de globo terráqueo, proporcionado por Font Awesome, junto al texto de la marca. -->
                 GALETICS
-
+                <!-- Nombre de la marca que aparecerá en la barra de navegación. -->
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-                <span class = "navbar-toggler-icon"></span>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botón para colapsar el menú en pantallas pequeñas. Usa clases de Bootstrap para su funcionalidad. -->
+                <span class="navbar-toggler-icon"></span>
+                <!-- Icono del botón de colapso (hamburguesa) de Bootstrap. -->
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Div que contiene los enlaces del menú y que será colapsable en dispositivos pequeños. -->
 
                 <ul class="navbar-nav ms-auto">
+                    <!-- Lista de elementos del menú, alineada a la derecha (ms-auto es una clase de Bootstrap para margen automático). -->
 
                     <li class="nav-item">
-
+                        <!-- Primer elemento de la lista del menú. -->
                         <a class="nav-link" href="#">
-
+                            <!-- Enlace a la sección de inicio. (Actualmente no redirige a ninguna parte, "#"). -->
                             <i class="fa-solid fa-house"></i>
-
+                            <!-- Icono de casa de Font Awesome. -->
                             Inicio
-
+                            <!-- Texto que aparece junto al icono. -->
                         </a>
-
                     </li>
 
                     <li class="nav-item">
-
+                        <!-- Segundo elemento de la lista del menú. -->
                         <a class="nav-link" href="#">
-
+                            <!-- Enlace a la sección "Acerca De". -->
                             <i class="fa-solid fa-circle-info"></i>
-
+                            <!-- Icono de información de Font Awesome. -->
                             Acerca De
-
+                            <!-- Texto del enlace. -->
                         </a>
-
                     </li>
-                    
+
                     <li class="nav-item">
-
+                        <!-- Tercer elemento del menú, para servicios. -->
                         <a class="nav-link" href="#">
-
+                            <!-- Enlace a la sección de servicios. -->
                             <i class="fa-solid fa-gears"></i>
-
+                            <!-- Icono de engranajes de Font Awesome. -->
                             Services
-
+                            <!-- Texto del enlace. -->
                         </a>
-
                     </li>
 
                     <li class="nav-item">
-
+                        <!-- Cuarto elemento del menú, para la sección de contacto. -->
                         <a class="nav-link" href="#">
-
+                            <!-- Enlace a la sección de contacto. -->
                             <i class="fa-solid fa-envelope"></i>
-
+                            <!-- Icono de sobre de Font Awesome (para contacto). -->
                             Contacto
-
+                            <!-- Texto del enlace. -->
                         </a>
                     </li>
 
                 </ul>
+                <!-- Cierre de la lista de elementos del menú. -->
             </div>
+            <!-- Cierre del contenedor colapsable del menú. -->
         </div>
+        <!-- Cierre del contenedor de la barra de navegación. -->
     </nav>
+    <!-- Cierre de la barra de navegación. -->
 
-    <!-- Sesion de carousel de imagenes (slider) -->
+    <!-- Sesión de carousel de imágenes (slider) -->
 
     <div id="fullWidthSlider" class="carousel slide" data-bs-ride="carousel">
+        <!-- Contenedor del carrusel de imágenes. "carousel slide" son clases de Bootstrap para la funcionalidad del carrusel. El atributo "data-bs-ride" activa el carrusel automáticamente. -->
 
         <div class="carousel-inner">
+            <!-- Contenedor de las imágenes del carrusel. -->
 
             <div class="carousel-item active">
-
-                <img src="img/video - Descubre el Poder de Linux La Terminal es tu Límite..png" class="d-block w-100" alt="Slider 1">
+                <!-- Primer ítem del carrusel. El atributo "active" indica que esta es la primera imagen que se muestra al cargar. -->
+                <img src="img/video - Descubre el Poder de Linux La Terminal es tu Límite..png" class="d-block w-100"
+                    alt="Slider 1">
+                <!-- Imagen del primer slide del carrusel, se ajusta al 100% del ancho (w-100) y tiene un texto alternativo. -->
             </div>
 
             <div class="carousel-item">
-
-                <img src="img/video - Domina los Fundamentos de HTML5_ Guía para Principiantes.png" class="d-block w-100" alt="Slider 2">
+                <!-- Segundo ítem del carrusel. -->
+                <img src="img/video - Domina los Fundamentos de HTML5_ Guía para Principiantes.png" class="d-block w-100"
+                    alt="Slider 2">
+                <!-- Imagen del segundo slide del carrusel. -->
             </div>
 
             <div class="carousel-item">
-
-                <img src="img/video - Teoría básica de Sistemas Operativos con redes.png" class="d-block w-100" alt="Slider 3">
+                <!-- Tercer ítem del carrusel. -->
+                <img src="img/video - Teoría básica de Sistemas Operativos con redes.png" class="d-block w-100"
+                    alt="Slider 3">
+                <!-- Imagen del tercer slide del carrusel. -->
             </div>
 
         </div>
+        <!-- Cierre del contenedor de imágenes del carrusel. -->
 
         <button class="carousel-control-prev" type="button" data-bs-target="#fullWidthSlider" data-bs-slide="prev">
-
+            <!-- Botón para retroceder en el carrusel. Usa las clases de Bootstrap para el control de los slides. -->
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
+            <!-- Icono de Bootstrap para el botón de retroceso. -->
             <span class="visually-hidden"> Previous </span>
-
+            <!-- Texto oculto para accesibilidad, indica "anterior". -->
         </button>
 
         <button class="carousel-control-next" type="button" data-bs-target="#fullWidthSlider" data-bs-slide="next">
-
+            <!-- Botón para avanzar en el carrusel. -->
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
+            <!-- Icono de Bootstrap para el botón de avance. -->
             <span class="visually-hidden"> Hidden</span>
-
+            <!-- Texto oculto para accesibilidad, indica "siguiente". -->
         </button>
 
     </div>
-
-    <!-- Sesion de cartas (footer) -->
-
+    <!-- Cierre del contenedor del carrusel. -->
     <div class="background">
+        <!-- Sección de la página que contiene el fondo y los artículos. Se utiliza la clase "background" para aplicar estilos de fondo. -->
+    
         <div>
+            <!-- Contenedor general sin clases adicionales, sirve para organizar los elementos internos. -->
+    
             <div>
+                <!-- Otro contenedor anidado para organizar el contenido de manera jerárquica. -->
+                
                 <h1 class="title">"Mas videos de mi canal de Youtube"</h1>
+                <!-- Encabezado principal de la sección, que utiliza la clase "title" para aplicar estilos al título. -->
             </div>
+    
             <div class="articles">
+                <!-- Contenedor que agrupa todos los artículos. Utiliza la clase "articles" para estilos específicos relacionados con los artículos. -->
+    
                 <article>
+                    <!-- Cada artículo está representado por un elemento "article" que contiene una imagen y una vista previa de texto. -->
+    
                     <figure>
-                        <img src="img/Video  - ¿Regresamos______ - Configuración de la seguridad en Cisco Packet Trace.png">
+                        <!-- Elemento que agrupa el contenido visual (imagen) del artículo. -->
+    
+                        <img src="img/Video  - ¿Regresamos______ - Configuración de la seguridad en Cisco Packet Trace.png" alt="Video Seguridad Cisco Packet Tracer">
+                        <!-- Imagen del primer video. El atributo "src" indica la ruta de la imagen. El atributo "alt" proporciona un texto alternativo para accesibilidad. -->
                     </figure>
+    
                     <div class="article-preview">
+                        <!-- Contenedor de la vista previa del artículo, donde se muestra el título y una breve descripción. -->
+    
                         <h2>¿Regresamos? - Configuración de la seguridad en Cisco Packet Trace.</h2>
+                        <!-- Título del primer artículo. -->
+    
                         <p class="article-preview p"> Regresamos presentando nuestro tema de dominio, en la Empresa GALETICS demuestra los comandos basicos de cisco y como siempre espero que disfrute.
-                        <a href="https://www.youtube.com/watch?v=MNBa8M7Kk8Y" title ="Read more">Leer mas</a>
+                        <a href="https://www.youtube.com/watch?v=MNBa8M7Kk8Y" title="Read more">Leer mas</a>
+                        <!-- Descripción del artículo con un enlace a YouTube para "Leer más". -->
                         </p>
                     </div>
                 </article>
     
                 <article>
                     <figure>
-                        <img src="img/video - Calculadora de Conversiones entre Sistemas Numéricos en Excel.png">
+                        <img src="img/video - Calculadora de Conversiones entre Sistemas Numéricos en Excel.png" alt="Video Calculadora Excel">
+                        <!-- Imagen del segundo video con texto alternativo para accesibilidad. -->
                     </figure>
+    
                     <div class="article-preview">
                         <h2>Calculadora de Conversiones entre Sistemas Numéricos en Excel.</h2>
+                        <!-- Título del segundo artículo. -->
+    
                         <p class="article-preview p">HOLA BUENAS / DÍAS / TARDES NOCHES , público que esté viendo este video nuevo del canal. En esta ocasión estamos presentando como utilizar la famosa aplicación.
-                        <a href="https://www.youtube.com/watch?v=9OYeb3AiIxo" title ="Read more">Leer mas</a>
+                        <a href="https://www.youtube.com/watch?v=9OYeb3AiIxo" title="Read more">Leer mas</a>
+                        <!-- Descripción del segundo artículo con enlace a YouTube. -->
                         </p>
                     </div>
                 </article>
     
                 <article>
                     <figure>
-                        <img src="img/video - Conectando el Mundo_ Dominando VLANs, Trunking, Enrutamiento Dinámico, EtherChannel y SSH.png">
+                        <img src="img/video - Conectando el Mundo_ Dominando VLANs, Trunking, Enrutamiento Dinámico, EtherChannel y SSH.png" alt="Video Conectando el Mundo">
+                        <!-- Imagen del tercer video con texto alternativo. -->
                     </figure>
+    
                     <div class="article-preview">
                         <h2>Conectando el Mundo: Dominando VLANs, Trunking y Enrutamientos.</h2>
+                        <!-- Título del tercer artículo. -->
+    
                         <p class="article-preview p"> En este video, exploraremos conceptos esenciales de redes, perfectos para estudiantes y profesionales que desean profundizar su conocimiento.
-                        <a href="https://www.youtube.com/watch?v=cVbHm1AFf3M" title ="Read more">Leer mas</a>
+                        <a href="https://www.youtube.com/watch?v=cVbHm1AFf3M" title="Read more">Leer mas</a>
+                        <!-- Descripción del tercer artículo con enlace a YouTube. -->
                         </p>
                     </div>
                 </article>
     
                 <article>
                     <figure>
-                        <img src="img/video - El último paquete - Domina la Red_ Configura ACL, NAT, DHCP, VLANs y Más cosas esenciales  en Cisco.png">
+                        <img src="img/video - El último paquete - Domina la Red_ Configura ACL, NAT, DHCP, VLANs y Más cosas esenciales  en Cisco.png" alt="Video ACL, NAT y DHCP">
+                        <!-- Imagen del cuarto video con texto alternativo. -->
                     </figure>
+    
                     <div class="article-preview">
                         <h2>El último paquete - Domina la Red: Configura ACL, NAT y DHCP.</h2>
+                        <!-- Título del cuarto artículo. -->
+    
                         <p class="article-preview p">Descubre los secretos para convertirte en un experto en redes con esta guía completa. Desde configurar ACL y NAT hasta dominar VLANs y enrutamiento dinámico.
-                        <a href="https://www.youtube.com/watch?v=nj8CHk8uRnc" title ="Read more">Leer mas</a>
-
+                        <a href="https://www.youtube.com/watch?v=nj8CHk8uRnc" title="Read more">Leer mas</a>
+                        <!-- Descripción del cuarto artículo con enlace a YouTube. -->
                         </p>
-
                     </div>
-
                 </article>
     
             </div>
-
+            <!-- Cierre del contenedor de los artículos. -->
+    
         </div>
-
-    </div>    
-
-    <!-- Sesion de encabezado pagina (footer) -->
-
+        <!-- Cierre del contenedor principal de la sección de fondo y artículos. -->
+    
+    </div>
+    <!-- Cierre del contenedor con la clase "background". -->
+    
+    <!-- Sesión de encabezado de página (footer) -->
+    
     <footer class="footer mt-auto">
-
+        <!-- Inicio del pie de página (footer) con la clase "footer" para estilos y "mt-auto" para margen superior automático. -->
+    
         <div class="container">
-
+            <!-- Contenedor de Bootstrap que centraliza el contenido. -->
+    
             <div class="row">
-
+                <!-- Div para la distribución en filas dentro del contenedor. -->
+    
                 <div class="col-md-4 mb-md-0">
-
+                    <!-- Columna del footer que ocupa 4 columnas en pantallas medianas, sin margen inferior (mb-md-0). -->
+    
                     <h5>Acerca de mi</h5>
-
-                    <p>Soy un estudiante universitario que sus tiempos libre trata de enseñar fundamentos basicos de redes y sus interconexciones con videos practicos utilizando la plataforma de Cisco Packet Trace en sus ultimas versiones y igual trato de enseñar otros temas como fundamentos de html (enguaje de etiquetas), lenguaje de programacion (JavaScript, CSS, entre otros).</p>
-
+                    <!-- Título de la primera sección del footer. -->
+    
+                    <p>Soy un estudiante universitario que en sus tiempos libres trata de enseñar fundamentos básicos de redes y sus interconexiones con videos prácticos utilizando Cisco Packet Tracer, además de enseñar otros temas como HTML y lenguajes de programación.</p>
+                    <!-- Descripción personal. -->
                 </div>
-
+    
                 <div class="col-md-4 mb-md-0">
-
-                    <h5>Enlaces Rapidos</h5>
-
+                    <!-- Segunda columna del footer. -->
+    
+                    <h5>Enlaces Rápidos</h5>
+                    <!-- Título de la sección de enlaces rápidos. -->
+    
                     <ul class="list-unstyled footer-links">
-
+                        <!-- Lista de enlaces sin estilo por defecto. -->
+    
                         <li><a href="#">Inicio</a></li>
-
                         <li><a href="#">Acerca de</a></li>
-
                         <li><a href="#">Servicios</a></li>
-
                         <li><a href="#">Contacto</a></li>
-
+                        <!-- Enlaces a las diferentes secciones del sitio. -->
                     </ul>
-                    
                 </div>
-
+    
                 <div class="col-md-4">
-
-                    <h5>Sigueme</h5>
-
+                    <!-- Tercera columna del footer. -->
+    
+                    <h5>Sígueme</h5>
+                    <!-- Título de la sección de redes sociales. -->
+    
                     <div class="social-icons">
-
+                        <!-- Contenedor para los íconos sociales. -->
+    
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-
                         <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-
+                        <!-- Íconos de redes sociales proporcionados por Font Awesome. -->
                     </div>
-                    
                 </div>
-
             </div>
-
+    
         </div>
-
+    
         <div class="copyright">
-
+            <!-- Sección que contiene los derechos de autor. -->
+    
             <div class="container">
-
+                <!-- Contenedor de Bootstrap para centrar el contenido. -->
+    
                 <div class="row">
-
+                    <!-- Fila para distribuir el contenido. -->
+    
                     <div class="col-md-12 text-center">
-
-                        <p>&copy; <span id="year"></span> Desarrolado por Cesar Sanchez. TI31BIS DSM. Todos los derechos reservados.</p>
-
+                        <!-- Columna de 12 unidades que centra el texto. -->
+    
+                        <p>&copy; <span id="year"></span> Desarrollado por Cesar Sanchez. TI31BIS DSM. Todos los derechos reservados.</p>
+                        <!-- Texto de derechos de autor con el año actualizado dinámicamente mediante JavaScript. -->
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
+    
     </footer>
-
+    <!-- Cierre del pie de página (footer). -->
+    
     <script src="js/script.js"></script>
-
+    <!-- Enlace al archivo JavaScript personalizado (script.js). -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Enlace a la biblioteca JavaScript de Bootstrap para las funcionalidades dinámicas de la página. -->
+    
 </body>
 </html>

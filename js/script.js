@@ -15,6 +15,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-
-// Obtiene el elemento con el id 'year' y establece su contenido de texto al año actual.
-document.getElementById('year').textContent = new Date().getFullYear();

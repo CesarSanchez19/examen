@@ -22,7 +22,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Enlace a la hoja de estilos de Font Awesome desde un CDN. Proporciona iconos escalables. -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <!-- Enlace a una hoja de estilos personalizada local, llamada "style.css", que probablemente contiene estilos específicos para esta página. -->
 
     <title>Practica_frontend</title>
@@ -32,7 +32,6 @@
 <!-- Cierre del encabezado del documento -->
 
 <!-- Sesión de Menú (Navbar) -->
-
 <body>
     <!-- Inicio del cuerpo del documento, donde se coloca el contenido visible de la página. -->
 
@@ -65,7 +64,7 @@
 
                     <li class="nav-item">
                         <!-- Primer elemento de la lista del menú. -->
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="index.html">
                             <!-- Enlace a la sección de inicio. (Actualmente no redirige a ninguna parte, "#"). -->
                             <i class="fa-solid fa-house"></i>
                             <!-- Icono de casa de Font Awesome. -->
@@ -98,7 +97,7 @@
 
                     <li class="nav-item">
                         <!-- Cuarto elemento del menú, para la sección de contacto. -->
-                        <a class="nav-link" href="contact.html">
+                        <a class="nav-link" href="#">
                             <!-- Enlace a la sección de contacto. -->
                             <i class="fa-solid fa-envelope"></i>
                             <!-- Icono de sobre de Font Awesome (para contacto). -->
@@ -116,157 +115,72 @@
     </nav>
     <!-- Cierre de la barra de navegación. -->
 
-    <!-- Sesión de carousel de imágenes (slider) -->
+    <!--Sesion de formulario de la pagina (form)-->
 
-    <div id="fullWidthSlider" class="carousel slide" data-bs-ride="carousel">
-        <!-- Contenedor del carrusel de imágenes. "carousel slide" son clases de Bootstrap para la funcionalidad del carrusel. El atributo "data-bs-ride" activa el carrusel automáticamente. -->
+<!--Main container-->
+<div class="container mt-5">
+    <h1 class="text-center mb-4"></h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-center">Contact Form</h1>
+            <!--Start of form-->
+            <form action="#" method="post">
+                <!--Name field-->
+                <div class = "mb-3">
+                    <label for="name" class ="form-label">Name(s)</label>
+                    <input type="text" class = "form-control" id = "name" name = "name" required>
+                </div>
+                <!--Surname field-->
+                <div class = "mb-3">
+                    <label for="surname" class ="form-label">Surname(s)</label>
+                    <input type="text" class = "form-control" id = "surname" name = "surname" required>
+                </div>
+                <!-- Email field -->
+                <div class = "mb-3">
+                    <label for="email" class ="form-label">E-mail</label>
+                    <input type="email" class = "form-control" id = "email" name = "email" required>
+                </div>
+                <!-- Phone field -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}">
+                </div>
+                <!--Subject field-->
+                <div class = "mb-3">
+                    <label for="subject" class ="form-label">Subject</label>
+                    <input type="text" class = "form-control" id = "subject" name = "subject" required>
+                </div>
+                <!-- Text area -->
+                <div class="mb-3">
+                    <label for="comments" class="form-label">Message</label>
 
-        <div class="carousel-inner">
-            <!-- Contenedor de las imágenes del carrusel. -->
-
-            <div class="carousel-item active">
-                <!-- Primer ítem del carrusel. El atributo "active" indica que esta es la primera imagen que se muestra al cargar. -->
-                <img src="img/video - Descubre el Poder de Linux La Terminal es tu Límite..png" class="d-block w-100"
-                    alt="Slider 1">
-                <!-- Imagen del primer slide del carrusel, se ajusta al 100% del ancho (w-100) y tiene un texto alternativo. -->
+                    <textarea class="form-control" name="comments" id="comments" rows="6"></textarea>
+                </div>
+                <!-- Send and reset buttons -->
+                <div>
+                    <button type="submit" class="btn btn-primary" class="sumbit">Submit</button>
+                </div>
             </div>
-
-            <div class="carousel-item">
-                <!-- Segundo ítem del carrusel. -->
-                <img src="img/video - Domina los Fundamentos de HTML5_ Guía para Principiantes.png" class="d-block w-100"
-                    alt="Slider 2">
-                <!-- Imagen del segundo slide del carrusel. -->
-            </div>
-
-            <div class="carousel-item">
-                <!-- Tercer ítem del carrusel. -->
-                <img src="img/video - Teoría básica de Sistemas Operativos con redes.png" class="d-block w-100"
-                    alt="Slider 3">
-                <!-- Imagen del tercer slide del carrusel. -->
-            </div>
-
-        </div>
-        <!-- Cierre del contenedor de imágenes del carrusel. -->
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#fullWidthSlider" data-bs-slide="prev">
-            <!-- Botón para retroceder en el carrusel. Usa las clases de Bootstrap para el control de los slides. -->
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <!-- Icono de Bootstrap para el botón de retroceso. -->
-            <span class="visually-hidden"> Previous </span>
-            <!-- Texto oculto para accesibilidad, indica "anterior". -->
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#fullWidthSlider" data-bs-slide="next">
-            <!-- Botón para avanzar en el carrusel. -->
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <!-- Icono de Bootstrap para el botón de avance. -->
-            <span class="visually-hidden"> Hidden</span>
-            <!-- Texto oculto para accesibilidad, indica "siguiente". -->
-        </button>
-
-    </div>
-    <!-- Cierre del contenedor del carrusel. -->
-    <div class="background">
-        <!-- Sección de la página que contiene el fondo y los artículos. Se utiliza la clase "background" para aplicar estilos de fondo. -->
-    
-        <div>
-            <!-- Contenedor general sin clases adicionales, sirve para organizar los elementos internos. -->
-    
-            <div>
-                <!-- Otro contenedor anidado para organizar el contenido de manera jerárquica. -->
+            </form>
+                <!-- Location -->
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477954.28394459485!2d-87.68208151093752!3d20.628129500000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e432fffe53369%3A0x5be97bdef9ac6a4c!2sCoco%20Bongo%20Playa%20del%20Carmen!5e0!3m2!1ses-419!2smx!4v1729085849504!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-info">
+                        <h5>Contact Information.</h5>
+                        <p><i class="fa-solid fa-location-dot"></i> Av.Universidades S/N Ejidal, 77712 Playa del carmen, Q.R. Mexico</p>
+                        <p> <i class="fa-solid fa-phone"></i> +52 (984) 877 2969</p>
+                        <p> <i class="fa-solid fa-envelope"></i> info@utrivieramaya.edu.mx</p>
+                        <p><i class="fa-solid fa-clock"></i>  Monday to Sunday: 8:00 PM - 4:00 AM</p>
+                    </div>
+                </div>
                 
-                <h1 class="title">"Mas videos de mi canal de Youtube"</h1>
-                <!-- Encabezado principal de la sección, que utiliza la clase "title" para aplicar estilos al título. -->
-            </div>
-    
-            <div class="articles">
-                <!-- Contenedor que agrupa todos los artículos. Utiliza la clase "articles" para estilos específicos relacionados con los artículos. -->
-    
-                <article>
-                    <!-- Cada artículo está representado por un elemento "article" que contiene una imagen y una vista previa de texto. -->
-    
-                    <figure>
-                        <!-- Elemento que agrupa el contenido visual (imagen) del artículo. -->
-    
-                        <img src="img/Video  - ¿Regresamos______ - Configuración de la seguridad en Cisco Packet Trace.png" alt="Video Seguridad Cisco Packet Tracer">
-                        <!-- Imagen del primer video. El atributo "src" indica la ruta de la imagen. El atributo "alt" proporciona un texto alternativo para accesibilidad. -->
-                    </figure>
-    
-                    <div class="article-preview">
-                        <!-- Contenedor de la vista previa del artículo, donde se muestra el título y una breve descripción. -->
-    
-                        <h2>¿Regresamos? - Configuración de la seguridad en Cisco Packet Trace.</h2>
-                        <!-- Título del primer artículo. -->
-    
-                        <p class="article-preview p"> Regresamos presentando nuestro tema de dominio, en la Empresa GALETICS demuestra los comandos basicos de cisco y como siempre espero que disfrute.
-                        <a href="https://www.youtube.com/watch?v=MNBa8M7Kk8Y" title="Read more">Leer mas</a>
-                        <!-- Descripción del artículo con un enlace a YouTube para "Leer más". -->
-                        </p>
-                    </div>
-                </article>
-    
-                <article>
-                    <figure>
-                        <img src="img/video - Calculadora de Conversiones entre Sistemas Numéricos en Excel.png" alt="Video Calculadora Excel">
-                        <!-- Imagen del segundo video con texto alternativo para accesibilidad. -->
-                    </figure>
-    
-                    <div class="article-preview">
-                        <h2>Calculadora de Conversiones entre Sistemas Numéricos en Excel.</h2>
-                        <!-- Título del segundo artículo. -->
-    
-                        <p class="article-preview p">HOLA BUENAS / DÍAS / TARDES NOCHES , público que esté viendo este video nuevo del canal. En esta ocasión estamos presentando como utilizar la famosa aplicación.
-                        <a href="https://www.youtube.com/watch?v=9OYeb3AiIxo" title="Read more">Leer mas</a>
-                        <!-- Descripción del segundo artículo con enlace a YouTube. -->
-                        </p>
-                    </div>
-                </article>
-    
-                <article>
-                    <figure>
-                        <img src="img/video - Conectando el Mundo_ Dominando VLANs, Trunking, Enrutamiento Dinámico, EtherChannel y SSH.png" alt="Video Conectando el Mundo">
-                        <!-- Imagen del tercer video con texto alternativo. -->
-                    </figure>
-    
-                    <div class="article-preview">
-                        <h2>Conectando el Mundo: Dominando VLANs, Trunking y Enrutamientos.</h2>
-                        <!-- Título del tercer artículo. -->
-    
-                        <p class="article-preview p"> En este video, exploraremos conceptos esenciales de redes, perfectos para estudiantes y profesionales que desean profundizar su conocimiento.
-                        <a href="https://www.youtube.com/watch?v=cVbHm1AFf3M" title="Read more">Leer mas</a>
-                        <!-- Descripción del tercer artículo con enlace a YouTube. -->
-                        </p>
-                    </div>
-                </article>
-    
-                <article>
-                    <figure>
-                        <img src="img/video - El último paquete - Domina la Red_ Configura ACL, NAT, DHCP, VLANs y Más cosas esenciales  en Cisco.png" alt="Video ACL, NAT y DHCP">
-                        <!-- Imagen del cuarto video con texto alternativo. -->
-                    </figure>
-    
-                    <div class="article-preview">
-                        <h2>El último paquete - Domina la Red: Configura ACL, NAT y DHCP.</h2>
-                        <!-- Título del cuarto artículo. -->
-    
-                        <p class="article-preview p">Descubre los secretos para convertirte en un experto en redes con esta guía completa. Desde configurar ACL y NAT hasta dominar VLANs y enrutamiento dinámico.
-                        <a href="https://www.youtube.com/watch?v=nj8CHk8uRnc" title="Read more">Leer mas</a>
-                        <!-- Descripción del cuarto artículo con enlace a YouTube. -->
-                        </p>
-                    </div>
-                </article>
-    
-            </div>
-            <!-- Cierre del contenedor de los artículos. -->
-    
+            
+
         </div>
-        <!-- Cierre del contenedor principal de la sección de fondo y artículos. -->
-    
+        
     </div>
-    <!-- Cierre del contenedor con la clase "background". -->
-    
+
     <!-- Sesión de encabezado de página (footer) -->
-    
     <footer class="footer mt-auto">
         <!-- Inicio del pie de página (footer) con la clase "footer" para estilos y "mt-auto" para margen superior automático. -->
     
@@ -343,7 +257,6 @@
         </div>
     
     </footer>
-    <!-- Cierre del pie de página (footer). -->
     
     <script src="js/script.js"></script>
     <!-- Enlace al archivo JavaScript personalizado (script.js). -->

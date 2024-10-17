@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <!-- Enlace a una hoja de estilos personalizada local, llamada "style.css", que probablemente contiene estilos específicos para esta página. -->
 
-    <title>Practica_frontend</title>
+    <title>Practica_frontend V.2</title>
     <!-- Título de la página web que aparecerá en la pestaña del navegador. -->
 
 </head>
@@ -115,70 +115,81 @@
     </nav>
     <!-- Cierre de la barra de navegación. -->
 
-    <!--Sesion de formulario de la pagina (form)-->
-
-<!--Main container-->
+    <!-- Sección de formulario de la página (formulario) -->
 <div class="container mt-5">
+    <!-- Título centrado con un margen inferior de 4 (actualmente vacío) -->
     <h1 class="text-center mb-4"></h1>
+
     <div class="row">
+        <!-- Columna para el formulario, ocupa 6 de las 12 columnas disponibles en pantallas medianas -->
         <div class="col-md-6">
+            <!-- Título del formulario centrado -->
             <h1 class="text-center">Contact Form</h1>
-            <!--Start of form-->
+            <!-- Inicio del formulario -->
             <form action="#" method="post">
-                <!--Name field-->
+                <!-- Campo para el nombre -->
                 <div class = "mb-3">
                     <label for="name" class ="form-label">Name(s)</label>
+                    <!-- Input de texto para el nombre, obligatorio (required) -->
                     <input type="text" class = "form-control" id = "name" name = "name" required>
                 </div>
-                <!--Surname field-->
+                <!-- Campo para el apellido -->
                 <div class = "mb-3">
                     <label for="surname" class ="form-label">Surname(s)</label>
+                    <!-- Input de texto para el apellido, obligatorio (required) -->
                     <input type="text" class = "form-control" id = "surname" name = "surname" required>
                 </div>
-                <!-- Email field -->
+                <!-- Campo para el correo electrónico -->
                 <div class = "mb-3">
-                    <label for="email" class ="form-label">E-mail</label>
+                    <label for="email" class ="form-label">Email</label>
+                    <!-- Input para el correo electrónico con validación de tipo email, obligatorio (required) -->
                     <input type="email" class = "form-control" id = "email" name = "email" required>
                 </div>
-                <!-- Phone field -->
+                <!-- Campo para el teléfono -->
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone</label>
+                    <!-- Input de teléfono con un patrón que acepta 9 dígitos (ejemplo de número local) -->
                     <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}">
                 </div>
-                <!--Subject field-->
+                <!-- Campo para el asunto -->
                 <div class = "mb-3">
                     <label for="subject" class ="form-label">Subject</label>
+                    <!-- Input de texto para el asunto, obligatorio (required) -->
                     <input type="text" class = "form-control" id = "subject" name = "subject" required>
                 </div>
-                <!-- Text area -->
+                <!-- Área de texto para el mensaje -->
                 <div class="mb-3">
-                    <label for="comments" class="form-label">Message</label>
-
-                    <textarea class="form-control" name="comments" id="comments" rows="6"></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <!-- Área de texto para el mensaje con 6 filas de altura -->
+                    <textarea class="form-control" name="message" id="message" rows="6"></textarea>
                 </div>
-                <!-- Send and reset buttons -->
+                <!-- Botones de enviar y reiniciar -->
                 <div>
-                    <button type="submit" class="btn btn-primary" class="sumbit">Submit</button>
+                    <!-- Botón de enviar el formulario -->
+                    <button type="submit" class="btn btn-primary" class="submit">Submit</button>
                 </div>
             </div>
             </form>
-                <!-- Location -->
-                <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477954.28394459485!2d-87.68208151093752!3d20.628129500000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e432fffe53369%3A0x5be97bdef9ac6a4c!2sCoco%20Bongo%20Playa%20del%20Carmen!5e0!3m2!1ses-419!2smx!4v1729085849504!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="contact-info">
-                        <h5>Contact Information.</h5>
-                        <p><i class="fa-solid fa-location-dot"></i> Av.Universidades S/N Ejidal, 77712 Playa del carmen, Q.R. Mexico</p>
-                        <p> <i class="fa-solid fa-phone"></i> +52 (984) 877 2969</p>
-                        <p> <i class="fa-solid fa-envelope"></i> info@utrivieramaya.edu.mx</p>
-                        <p><i class="fa-solid fa-clock"></i>  Monday to Sunday: 8:00 PM - 4:00 AM</p>
-                    </div>
+            <!-- Columna para la ubicación y la información de contacto -->
+            <div class="col-md-6">
+                <!-- Mapa incrustado de Google Maps para mostrar la ubicación -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.648889941564!2d-87.06636422510753!3d20.683858780880602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e2a14f13ba35%3A0x25d0481d668fb996!2sUniversidad%20Tecnol%C3%B3gica%20de%20la%20Riviera%20Maya%20-%20BIS!5e0!3m2!1ses-419!2smx!4v1729181414894!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <h5 class="">Contact Information:</h5>
+                    <!-- Dirección -->
+                    <p><i class="fa-solid fa-location-dot"></i> Av.Universidades S/N Ejidal, 77712 Playa del Carmen, Q.R. Mexico</p>
+                    <!-- Número de teléfono -->
+                    <p> <i class="fa-solid fa-phone"></i> +52 (984) 877 2969</p>
+                    <!-- Correo electrónico -->
+                    <p> <i class="fa-solid fa-envelope"></i> info@utrivieramaya.edu.mx</p>
+                    <!-- Horario de atención -->
+                    <p><i class="fa-solid fa-clock"></i> Monday to Sunday: 8:00 PM - 4:00 AM</p>
                 </div>
-                
-            
-
+            </div>
         </div>
-        
     </div>
+    <!-- Cierre del formulario -->
 
     <!-- Sesión de encabezado de página (footer) -->
     <footer class="footer mt-auto">
@@ -209,7 +220,7 @@
                     <ul class="list-unstyled footer-links">
                         <!-- Lista de enlaces sin estilo por defecto. -->
     
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="#">Acerca de</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Contacto</a></li>

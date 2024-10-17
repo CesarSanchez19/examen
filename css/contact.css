@@ -241,11 +241,12 @@ body footer {
     margin: 40px; /* Define un margen de 40px alrededor del título. */
 }
 .footer {
-    background: #121155; /* Establece el color de fondo del pie de página. */
+    background: #121155; /* Establece el color de fondo del pie de página en un tono azul oscuro (#121155). */
     color: white; /* Establece el color del texto en blanco. */
-    padding: 50px 0 20px; /* Define el espaciado interno: 50px en la parte superior, 0 en los lados, y 20px en la parte inferior. */
-    position: relative; /* Posiciona el pie de página de manera relativa. */
-    overflow: hidden; /* Oculta cualquier contenido que desborde del contenedor. */
+    padding: 50px 0 20px; /* Define el espaciado interno: 50px en la parte superior, 0 en los lados (izquierda y derecha), y 20px en la parte inferior. */
+    position: relative; /* Establece una posición relativa para el pie de página, lo que significa que puede ser movido de acuerdo con su posición normal en el flujo del documento. */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor del pie de página. */
+    margin-top: 20px; /* Añade un margen de 20px en la parte superior para separar el pie de página del contenido anterior. */
 }
 
 .footer h5 {
@@ -350,6 +351,8 @@ h1 {
     background-color: rgb(59, 124, 188);
     /* Establece el color del borde del botón primario */
     border-color: rgb(59, 124, 188);
+    /* La propiedad margin-bottom establece el espacio exterior (margen) debajo del botón */
+    margin-bottom: 20px; /* Se agrega un margen inferior de 20px */
 }
 
 .btn-primary:hover {
@@ -357,10 +360,14 @@ h1 {
     background-color: rgb(15, 60, 105);
     /* Establece el color del borde cuando el botón primario es hover */
     border-color:rgb(15, 60, 105);
-    padding: 20px;
 }
 
 h5 {
+    /* Define el peso de la fuente como 'negrita' */
     font-weight: bold;
+    
+    /* Cambia el color del texto al valor definido por la variable CSS '--secondary_color' */
+    color: var(--secondary_color);
 }
+
 
